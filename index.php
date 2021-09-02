@@ -17,6 +17,7 @@
 					<option value="B"> Bon état</option>
 					<option value="C">Etat correct</option>
 				</select>
+		</form>
 
 		<h2>Mise à jour base de données Tome2</h2>
 		<a href="majbddt2.php">Mise à jour générale base de données T2</a>
