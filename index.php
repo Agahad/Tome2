@@ -8,14 +8,19 @@
 	</head>
     <body>
 		<h1>Tome 2</h1>
-		<h2>Recherche info livre avec code ISBN</h2>
-        <form action="infoslivres.php" method="post">
-			<p><label for="isbn"> ISBN : <input type="text" id="isbn" name="isbn"/></p>
-			<p><input type="submit" value="Envoi"></p>
-		</form>
+		<h2>Ajout d'un livre dans la base de données</h2>
+		<form action="ajoutlivre.php" method="post">
+			<p><label for="ajout_isbn"> ISBN : <input type="text" id="ajout_isbn" name="ajout_isbn"/></p>
+			<p><label for="etat"> Etat du livre : </br></label>
+				<select name="etat" id="etat">
+					<option value="TB"> Très bon état</option>
+					<option value="B"> Bon état</option>
+					<option value="C">Etat correct</option>
+				</select>
+
 		<h2>Mise à jour base de données Tome2</h2>
-		<form action="majbddt2.php" method="post">
-			<p><input type="submit" value="MAJ BDD"></p>
-		</form>
+		<a href="majbddt2.php">Mise à jour générale base de données T2</a>
+
+		<?php include "form_isbn.php"; ?> 
     </body>
 </html>
